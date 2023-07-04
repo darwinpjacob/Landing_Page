@@ -1,0 +1,141 @@
+  @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap');
+
+  * {
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+  }
+
+  :root {
+      --primary-color: rgba(4, 255, 171, 0.849);
+      --secondary-color: #1f1f1f;
+  }
+
+  nav {
+      height: 10vh;
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px calc((100vw - 1300px)/2);
+
+  }
+
+  .logo {
+      color: var(--secondary-color);
+      font-size: 15px;
+      font-weight: bold;
+      font-style: italic;
+
+  }
+
+  .logo>img {
+      width: 50px;
+      display: inline;
+  }
+
+  .logo h1 {
+      display: inline;
+      font-size: 45px;
+      color: rgb(87, 84, 84);
+  }
+
+  .nav-items a {
+      text-decoration: none;
+      color: var(--secondary-color);
+      padding: 0 1.5rem;
+  }
+
+  .nav-items a:hover {
+      color: #fff;
+      transition: ease-in-out 0.3s;
+  }
+
+  .hero {
+      background-color: var(--primary-color);
+  }
+
+  .hero-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      height: 90vh;
+      padding: 0px calc((100vw - 1300px)/2);
+  }
+
+  .col-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      color: var(--secondary-color);
+      padding: 0rem 2rem;
+  }
+
+  .col-left h1 {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+  }
+
+  .col-left p {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      line-height: 1.5;
+  }
+
+  .col-left button {
+      padding: 1rem 3rem;
+      font-size: 1rem;
+      font-weight: 700;
+      /* border: none; */
+      border-radius: 50px;
+      color: var(--primary-color);
+      background: #000;
+      cursor: pointer;
+  }
+
+  .col-left button:hover {
+      background-color: aqua;
+      color: var(--secondary-color);
+      border: 1px solid var(--secondary-color);
+      transition: ease-in-out 0.2s;
+
+  }
+
+  .col-right {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 0rem 2rem;
+  }
+
+  .col-right img{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .logo h1{
+        font-size: 30px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-items{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .col-left h1{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .col-left p{
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+    
+  }
